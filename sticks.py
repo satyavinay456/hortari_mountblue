@@ -1,5 +1,4 @@
 sticks_cut=[]
-#sticks=[5,4,4,2,2,8]
 sticks=[1, 1, 2, 3]
 sticks_cut.append(len(sticks))
 while True:
@@ -8,5 +7,5 @@ while True:
 		sticks_cut.append(len(sticks))
 	if sticks==[] : break
 
-print("final:",sticks)
-print("cut: ",sticks_cut)
+print("final sticks :",sticks)
+print("sticks cut : ",sticks_cut)
