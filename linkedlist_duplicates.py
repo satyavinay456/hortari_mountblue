@@ -1,8 +1,3 @@
-class Node:
-    def __init__(self, data):
-        self.data = data
-        self.next = None
- 
 class LinkedList:
     def __init__(self):
         self.head = None
@@ -48,12 +43,17 @@ def remove_duplicates(llist):
         current1 = current1.next
  
 l_list = LinkedList()
-data_list=['1', '4', '3', '1', '2', '4', '3', '6', '7', '2', '5', '6', '7', '0']
+
+#input the numbers with delimiter as space
+print("Enter the numbers with delilmiter as space")
+data_list=list(map(int,input().split()))
+print("list entered  :",data_list)
+#data_list=['1', '4', '3', '1', '2', '4', '3', '6', '7', '2', '5', '6', '7', '0']
 
 for i in data_list:
-    l_list.append(int(i))
+    l_list.append(i)
 print(l_list)
 remove_duplicates(l_list)
 
-print('List with duplicates removed: ')
+print('linked List with duplicates removed: ')
 l_list.display()
