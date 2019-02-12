@@ -1,9 +1,10 @@
 import itertools
 def divisibility(number):
-	print(["".join(i) for i in itertools.permutations(number)])
 	return [int("".join(i)) for i in itertools.permutations(number) if int(''.join(i))%8==0]
 
 if __name__=='__main__':
-	number='123'
-	print(divisibility(number))
+	print("Enter the to check divisibility")
+	number=input()
+	print("You entered",number)
+	print("All permutations of given digit that can be divisible by 8",divisibility(number))
 
