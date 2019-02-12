@@ -4,6 +4,7 @@ def election_polls(names_list):
 
 if __name__=='__main__':
 	#input the voters with delimiter as space
-	print("enter voter names with delilmiter as space")
-	votes=input().split()
+	print("enter the names with delilmiter as space")
+	votes=list(map(str,input().split()))
+	print("voters list : ",votes)
 	print(election_polls(votes),"wins")
