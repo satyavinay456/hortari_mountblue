@@ -6,5 +6,8 @@ def duplicates(items):
 	return non_duplic
 
 if __name__=='__main__':
-	items= [4, 5, 5, 6, 6, 6]
-	print(duplicates(items))
+	#input the numbers with delimiter as space
+	print("Enter the numbers with delilmiter as space")
+	items=list(map(int,input().split()))
+	print("Items entered are :",items)
+	print("After removing duplicates :",duplicates(items))
