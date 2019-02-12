@@ -4,5 +4,8 @@ def sort_occurences(items):
 	return fin_list
 
 if __name__=='__main__':
-	items=[4, 5, 7, 7, 6, 5, 4, 3]
-	print(sort_occurences(items))
+	#input the numbers with delimiter as space
+	print("enter the numbers with delilmiter as space")
+	items=list(map(int,input().split()))
+	print("items entered are :",items)
+	print("After sorting : ",sort_occurences(items))
