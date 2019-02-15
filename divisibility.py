@@ -6,7 +6,7 @@ if __name__=='__main__':
 	print("Enter the number to check divisibility")
 	number=input()
 	print("You entered",number)
-	print("All permutations of given digit that can be divisible by 8",divisibility(number))
+	print("All permutations of given digit that can be divisible by 8 :",divisibility(number))
 	if divisibility(number)==[]:
 		print("Permutations of Entered number --",number," =>cannot be evenly divisible by 8")
 	else:
