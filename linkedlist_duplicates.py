@@ -40,7 +40,6 @@ def remove_duplicates(llist):
                 llist.remove(current2)
             current2 = current2.next
         current1 = current1.next
-    #l_list.display()
 
 if __name__ =='__main__':
     #input the numbers with delimiter as space
