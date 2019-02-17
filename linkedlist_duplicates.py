@@ -52,3 +52,7 @@ if __name__ =='__main__':
     remove_duplicates(l_list)
     print('linked List with duplicates removed: ')
     l_list.display()
+    #diplayed
+    
+    
+    
