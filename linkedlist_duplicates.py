@@ -40,7 +40,7 @@ def remove_duplicates(llist):
                 llist.remove(current2)
             current2 = current2.next
         current1 = current1.next
-
+    l_list.display()
 if __name__ =='__main__':
     #input the numbers with delimiter as space
     l_list = LinkedList()
@@ -49,10 +49,9 @@ if __name__ =='__main__':
     print("list entered  :",data_list)
     for i in data_list:
         l_list.append(i)
-    remove_duplicates(l_list)
     print('linked List with duplicates removed: ')
-    l_list.display()
-    #diplayed
+    remove_duplicates(l_list)
+    
     
     
     
