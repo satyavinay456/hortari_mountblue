@@ -1,9 +1,6 @@
 
 
-class Node:
-    def __init__(self, data):
-        self.data = data
-        self.next = None 
+
 class LinkedList:
     def __init__(self):
         self.head = None
@@ -36,7 +33,10 @@ class LinkedList:
             print(current.data, end='-->')
             current = current.next
  
- 
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None 
 def remove_duplicates(llist):
     current1 = llist.head
     while current1:
