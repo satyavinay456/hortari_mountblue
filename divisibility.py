@@ -9,7 +9,7 @@ if __name__=='__main__':
 	print("permutations of entered number is ",set([int("".join(i)) for i in set(itertools.permutations(number))]))
 	print("All permutations of given digit that can be divisible by 8 :",divisibility(number))
 	if divisibility(number)==[]:
-		print("Permutations of Entered number cannot be evenly divisible by 8")
+		print("Permutations of Entered number cannot be divisible by 8")
 	else:
 		print("Permutations of Entered number can be  divisible by 8")
 
